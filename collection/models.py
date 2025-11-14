@@ -9,4 +9,5 @@ class CollectionEntry(models.Model):
     notes = models.TextField(blank=True)
 
     def __str__(self):
-        return f"Collected: {self.item.title}"
+        return f"Collected: {self.item.name}"
+

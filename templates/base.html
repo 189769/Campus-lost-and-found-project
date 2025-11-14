@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Lost & Found</title>
+    <style>
+        /* Strathmore colors: red (#E30613), blue (#002855), white (#FFFFFF), gray (#F5F5F5) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F5F5F5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #002855;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #E30613;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px 20px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .buttons a {
+            background-color: #E30613;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .buttons a:hover {
+            background-color: #002855;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #002855;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Campus Lost & Found</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">View Lost Items</a>
+            <a href="#">Report Lost Item</a>
+            <a href="#">Register</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to the Campus Lost & Found System</h2>
+        <div class="buttons">
+            <a href="#">View Lost Items</a>
+            <a href="#">Report Lost Item</a>
+            <a href="#">Register</a>
+            <a href="#">Login</a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Campus Lost & Found | Strathmore University
+    </footer>
+</body>
+</html>

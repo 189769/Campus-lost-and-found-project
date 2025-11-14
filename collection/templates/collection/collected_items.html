@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Collected Items</h2>
+<table border="1">
+    <tr>
+        <th>Item Name</th>
+        <th>Collected By</th>
+        <th>Collected At</th>
+        <th>Notes</th>
+    </tr>
+    {% for entry in items %}
+    <tr>
+        <td>{{ entry.item.name }}</td>
+        <td>{{ entry.collected_by.username }}</td>
+        <td>{{ entry.collected_at }}</td>
+        <td>{{ entry.notes }}</td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="4">No collected items yet.</td></tr>
+    {% endfor %}
+</table>
+{% endblock %}

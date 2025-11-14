@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Dashboard</h1>
+
+<div class="dashboard">
+    <div class="card">
+        <h2>Lost Items</h2>
+        <p>View all reported lost items.</p>
+        <a href="{% url 'view_lost_items' %}">Go</a>
+    </div>
+
+    <div class="card">
+        <h2>Report Item</h2>
+        <p>Add a new lost item to the system.</p>
+        <a href="{% url 'add_lost_item' %}">Go</a>
+    </div>
+
+    <div class="card">
+        <h2>Collected Items</h2>
+        <p>Track items that have been collected.</p>
+        <a href="{% url 'collected_items' %}">Go</a>
+    </div>
+</div>
+{% endblock %}

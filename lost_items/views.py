@@ -6,6 +6,7 @@ from .forms import LostItemForm, FoundReportForm
 from collection.models import CollectionEntry
 from django.shortcuts import render
 from .models import LostItem
+from django.contrib.auth.decorators import login_required
 
 from django.shortcuts import render
 
@@ -26,6 +27,7 @@ def add_lost_item(request):
 def view_lost_items(request):
     items = LostItem.objects.all()
     return render(request, 'lost_items/view_lost_items.html', {'items': items})
+
 
 def home(request):
     return render(request, 'base.html')

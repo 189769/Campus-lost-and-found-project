@@ -1,8 +1,9 @@
+<!-- collection/templates/collection/add_collection_item.html -->
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Add Lost Item</h2>
-<form method="POST" enctype="multipart/form-data">
+<h2>Add Collection Item</h2>
+<form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Submit</button>
